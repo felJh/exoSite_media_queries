@@ -1,5 +1,45 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    
+@media screen and (min-width: 1024px) {
+    
+}
+@media screen and (max-width: 1023px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:     center;
+        margin: auto;
+        line-height: 10vh;
+    }
+    header div, header nav{
+        width: 50%;
+        
+    }
+
+}
+@media screen and (max-width: 599px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:     center;
+        margin: auto;
+        line-height: 10vh;
+        width: 100%;
+    }
+    header nav img{
+        display: none;
+        
+    }
+    header li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
 
 body{
     font-family: 'Ubuntu', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,43 +55,45 @@ li{
 }
 
 header{
+    top: 0;
+    left: 0;
     display:                 flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items:           center;
     text-align:            center;
     background-color: black;
     color:            beige;
-    height:  10vw;
-    width:   inherit;
+    height:  auto;
+    width:   100%;
+    
 }
-header div img{
+header div{
     position: relative;
-    left: -4vw;
+    width: 45%;
+
 }
 header nav{
-    width:  50vw;
-    left:   50vw;
+    position: relative;
+    width:  55%;
 }
 
 header ul{
-    top:      0;
-    right:    0;
-    width: 50vw;
-    position:            absolute;
-    display:                 flex;
-    justify-content: space-evenly;
+    
+    height: 100%;
+    display:                  flex;
+    justify-content: space-between;
 }
 header li{
     display:                  flex;
     justify-content: space-between;
-    flex-direction: column;
-    align-items:    center;
+    flex-direction:         column;
+    align-items:            center;
     font-size: 0.7em;
-    width:       7vw;
 }
 header li img{
-    width:  5vw;
+    width:  3.5rem;
 }
+
 .headBanner img{
     width:  100%;
     height: auto;
